@@ -1,0 +1,39 @@
+header {
+    display: flex;
+    justify-content: space-between;
+   flex-direction: column;
+}
+
+.name-nav {
+    display: flex;
+    background-image: url(../images/purple-taupe.jpg);
+}
+
+header a {
+    text-decoration: none;
+    color:cadetblue;
+}
+header nav {
+    margin: 7px 0;
+}
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+header nav ul li a {
+    padding: 10px 15px;
+    font-weight: lighter;
+    font-size: 2vw;
+}
+
+header h1 {
+    color: white;
+    background: rgba(38, 128, 225, 0.843);
+    background-size: 60px;
+    font-style: normal;
+    font-size: 35px;
+}
