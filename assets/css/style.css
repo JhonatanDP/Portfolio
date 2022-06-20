@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: #ededf6;
+}
+/*Name and nav start*/
 header {
     padding: 10px 0;
     display: flex;
@@ -45,7 +49,7 @@ header nav ul li a {
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     padding: 10px 4px;
     font-weight: lighter;
-    font-size: 1.5vw;
+    font-size: 17px;
     text-decoration: none;
     color: #92cccd;
 }
@@ -54,9 +58,87 @@ header nav ul li span {
     border-bottom: 2px solid #92cccd;
     border-bottom-width: 3px;
     padding: 0 5px 5px 5px;
+}
+/*name and nav ends*/
 
+/*Avatar and Subtitle Start*/
+.avatar-title {
+    background-image: url(../images/Background-02.jpeg);
+    background-size: cover;
+    display: flex;
+    justify-content:space-between;
+    flex-wrap: wrap;
+    align-items:center;
+    height: 200px;
 }
 
+.avatar-title .avatar img {
+    height: 150px;
+    width: 150px;
+    margin-left: 50px;
+}
+ 
+.avatar-title .subtitle {
+    background-color: #92cccd;
+    margin: 80px 60px;
+}
+
+.avatar-title .subtitle h2 {
+    font-size: 30px;
+    font-weight: lighter;
+    padding-left: 0;
+}
+/*Avatar and Subtitle End*/
+
+/*Section Destails start here*/
+.details {
+    padding: 60px;
+}
+
+.about-me {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.about-me h3 {
+    color:#445976 ;
+    font-size: 46px;
+    font-weight: lighter;
+    flex: 1 15%;
+    text-align: right;
+    padding-right: 10px;
+}
+
+.about-me p {
+    color:#7b8db6; 
+    flex: 2 85%;
+    font-size: 15px; 
+    border-left: 3px #445976 solid;
+    padding:5px 10px 10px 40px;
+}
+.work {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.work h3 {
+    color:#445976 ;
+    font-size: 46px;
+    font-weight: lighter;
+    flex: 1 15%;
+    text-align: right;
+    padding-right: 10px;
+}
+.work .projects {
+    flex: 2 85%; 
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    border-left: 3px #445976 solid;
+    padding:5px 10px 10px 40px;
+}
 
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
   @media screen and (max-width:980px) {
@@ -81,3 +163,11 @@ header nav ul li span {
           font-size: 20px;
       }
     }
+
+    @media screen and (max-width:538px) {
+        
+        .avatar-title .subtitle {
+           margin: 0 20px;
+        }
+    }
+
