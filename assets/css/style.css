@@ -3,7 +3,10 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+:root {
+    --image-height:200px;
+    --image-width:400px;
+}
 body {
     background-color: #ededf6;
 }
@@ -120,7 +123,8 @@ header nav ul li span {
 .work {
     display: flex;
     flex-wrap: wrap;
-    align-content: center;
+    align-content: center; 
+    padding: 60px;
 }
 
 .work h3 {
@@ -135,10 +139,27 @@ header nav ul li span {
     flex: 2 85%; 
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
+    align-items:center;
+    flex-direction: row;
+    align-content: space-between;
+
     border-left: 3px #445976 solid;
-    padding:5px 10px 10px 40px;
 }
+
+.work .projects .run-buddy img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    padding-left: 40px;
+}
+
+.work .projects .image01 img {
+    width:var(--image-width);
+    height: var(--image-height);
+}
+
+
+
 
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
   @media screen and (max-width:980px) {
