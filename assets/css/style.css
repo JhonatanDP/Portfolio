@@ -141,24 +141,96 @@ header nav ul li span {
     flex-wrap: wrap;
     align-items:center;
     flex-direction: row;
-    align-content: space-between;
-
+    padding-left: 40px;
     border-left: 3px #445976 solid;
+    justify-content: space-between;
 }
 
+/*.work .projects .run-buddy {
+    flex: 1 80%;
+    margin-bottom: 10px;
+}
+*/
+
+.work .projects .run-buddy {
+    width: 700px; height: 700px; margin: 5px;
+    border: 5px solid #92cccd;
+    text-align: left; color: #445976;
+    padding-top: 1.3em;
+    position: relative;
+    background: url(../images/run-buddy.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex: 1 0 100%;
+
+}
+
+.work .projects div {
+    width: 200px; height: 200px; margin: 5px;
+    border: 5px solid #92cccd;
+    font-size: 3em; text-align: left; color: #445976;
+    padding-top: 1.3em;
+    position: relative;
+}
+
+.work .projects .project01 , .project02 , .project03 , .project04 {
+    flex: 1 1 calc(50% - 10px);
+    background-color: #445976;
+}
+
+.work .projects article {
+    position:absolute;
+    bottom: 30px;
+    left: 0px;
+    background-color: #92cccd;
+    padding: 10px 10px 10px 40px;
+}
+
+.work .projects .run-buddy h4 {
+    font-weight: lighter;
+    font-size: 30px;
+}
+
+.work .projects .run-buddy p {
+    font-size: 16px;
+    font-weight: lighter;
+}
+
+.work .projects .project01, .work .projects .project02, .work .projects .project03,
+.work .projects .project04, h4 {
+    font-size: 12px;
+}
+
+/*.work .projects .project01, .project02 p {
+    font-size: 12px;
+    font-weight: lighter;
+}
+*/
+
+/*
 .work .projects .run-buddy img {
     height: 100%;
     width: 100%;
-    object-fit: cover;
-    padding-left: 40px;
+    object-fit: cover;  
 }
 
-.work .projects .image01 img {
-    width:var(--image-width);
-    height: var(--image-height);
+.work .projects img {
+    border: 5px solid #92cccd;
 }
 
+.work .projects .others {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding-top: 20px;
+}
 
+.work .projects .others .image01 img {
+    flex: 1 0 50%;
+
+}
+*/
 
 
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
