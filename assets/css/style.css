@@ -214,6 +214,10 @@ header nav ul li span {
     font-size: 12px;
 }
 
+.project01 {
+Background: url (../images/)
+}
+
 .contact {
     display: flex;
     align-content: center; 
